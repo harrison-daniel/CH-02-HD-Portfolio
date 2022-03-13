@@ -65,19 +65,6 @@ header nav ul li a:hover {
 /* Header and Nav End */
 
 /* Footer Start */
-footer {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-footer h2 {
-  color: var(--secondary-color);
-}
-
-footer div {
-  border-bottom: 1px solid var(--secondary-color);
-}
 
 /* Hero Start */
 .hero {
@@ -88,6 +75,7 @@ footer div {
   flex-wrap: wrap;
   background-attachment: fixed;
   background-position: 80%;
+  margin: 0px 0px 20px 0px;
 }
 
 .hero-subtitle {
@@ -106,13 +94,12 @@ footer div {
 
 /* Section Titles Start */
 .section-title {
-  font-size: 50px;
-  border-right: 5px solid;
+  margin: 10px 20px;
+  border-right: 3.5px solid;
   color: var(--secondary-color);
-  padding-right: 20px;
-  text-align: left;
-  margin: 0px auto 35px auto;
-  width: 20%;
+  text-align: right;
+  font-size: 30px;
+  padding: 0px 10px 40px 50px;
 }
 
 .primary-border {
@@ -122,11 +109,49 @@ footer div {
 .secondary-border {
   border-color: brown;
 }
-
 /* Section Titles End */
 
 /* About Me */
+.about-me {
+  flex: 1 1 10em;
+}
 
 /* Work  */
+.surf-report {
+  flex: 1 1 10em;
+}
+
+.surf-report img {
+  width: 40%;
+  border-color: var(--primary-color);
+}
 
 /* Contact Me */
+
+/* Utilities */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.containers {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+/* end Utilities */
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+}
