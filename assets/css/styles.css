@@ -84,26 +84,46 @@ footer div {
   background-image: url("../images/wood-unsplash.jpg");
   background-size: cover;
   display: flex;
-  flex-wrap: wrap;
   justify-content: right;
+  flex-wrap: wrap;
   background-attachment: fixed;
   background-position: 80%;
-  padding: 80px 0px 80px 0px;
 }
 
 .hero-subtitle {
-  padding: 40px 0px 40px 0px;
+  padding: 70px 30px 20px 20px;
   display: flex;
-  flex-wrap: wrap;
   align-items: flex-end;
+  flex-wrap: wrap;
 }
 
 .hero-subtitle h2 {
   background-color: var(--primary-color);
   color: black;
   flex: wrap;
-  justify-content: end;
 }
+/* Hero End */
+
+/* Section Titles Start */
+.section-title {
+  font-size: 50px;
+  border-right: 5px solid;
+  color: var(--secondary-color);
+  padding-right: 20px;
+  text-align: left;
+  margin: 0px auto 35px auto;
+  width: 20%;
+}
+
+.primary-border {
+  border-color: blueviolet;
+}
+
+.secondary-border {
+  border-color: brown;
+}
+
+/* Section Titles End */
 
 /* About Me */
 
