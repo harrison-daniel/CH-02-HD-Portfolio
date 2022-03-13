@@ -1,42 +1,43 @@
 :root {
   --primary-color: rgb(143, 205, 207);
+  --secondary-color: rgb(19, 31, 56);
 }
 
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  color: var(--secondary-color);
 }
 
 /* Header and Nav Start */
 
 header {
-  padding: 10px 70px;
+  padding: 10px 10px 10px 0px;
   background-color: rgb(41, 46, 46);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 header h1 {
+  font-size: 35px;
   font-weight: bold;
-  font-size: 38px;
-}
-
-header h1 a {
-  text-decoration: none;
-  color: black;
+  padding: 0px 10px 0px 60px;
   background-color: var(--primary-color);
 }
 
 header a {
-  color: var(--primary-color);
   text-decoration: none;
-  border-bottom: var(--primary-color);
+  color: black;
 }
+
 header nav {
-  margin: 10px 0;
+  margin: 10px;
 }
 
 header nav ul {
@@ -49,20 +50,63 @@ header nav ul {
 
 header nav ul li a {
   padding: 10px 15px;
-  font-weight: lighter;
-  font-size: 1.55vw;
-  border-bottom: var(--primary-color);
-  flex: wrap;
-  justify-content: center;
+  font-weight: bolder;
+  font-size: 1.4vw;
+  color: var(--primary-color);
 }
 
-nav {
+header nav ul li a:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 10px;
+  text-shadow: none;
+}
+
+/* Header and Nav End */
+
+/* Footer Start */
+footer {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding-top: 45px;
-  padding-left: 8%;
-  padding-right: 8%;
+  flex-wrap: wrap;
 }
 
-/* Hero  */
+footer h2 {
+  color: var(--secondary-color);
+}
+
+footer div {
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+/* Hero Start */
+.hero {
+  background-image: url("../images/wood-unsplash.jpg");
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  background-attachment: fixed;
+  background-position: 80%;
+  padding: 80px 0px 80px 0px;
+}
+
+.hero-subtitle {
+  padding: 40px 0px 40px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.hero-subtitle h2 {
+  background-color: var(--primary-color);
+  color: black;
+  flex: wrap;
+  justify-content: end;
+}
+
+/* About Me */
+
+/* Work  */
+
+/* Contact Me */
