@@ -155,7 +155,7 @@ header nav ul li a:hover {
   color: black;
   background: var(--primary-color);
 }
-.led-wall-img {
+.led-img {
   height: 200px;
   flex: 1;
 }
@@ -176,6 +176,42 @@ header nav ul li a:hover {
   height: 200px;
   flex: 1;
 }
+
+.pastel-puzzles-div {
+  position: relative;
+}
+
+.pastel-puzzles-div p {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  color: black;
+  background: var(--primary-color);
+}
+
+.pastel-puzzles-img {
+  height: 200px;
+  flex: 1;
+}
+
+.run-buddy-div {
+  position: relative;
+}
+
+.run-buddy-div p {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  color: black;
+  background: var(--primary-color);
+}
+
+.run-buddy-img {
+  height: 150px;
+  width: 500px;
+  flex: 1;
+}
+
 .contact-me {
   display: flex;
   justify-content: space-between;
