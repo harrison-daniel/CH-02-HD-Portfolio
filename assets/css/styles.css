@@ -65,6 +65,13 @@ header nav ul li a:hover {
 /* Header and Nav End */
 
 /* Footer Start */
+/*footer {
+  padding: 10px 10px 10px 0px;
+  background-color: rgb(41, 46, 46);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
 /* Hero Start */
 .hero {
@@ -102,8 +109,6 @@ header nav ul li a:hover {
   padding: 0px 10px 40px 50px;
 }
 
-/* Section Titles End */
-
 /* About Me */
 #about-me,
 #work,
@@ -119,6 +124,8 @@ header nav ul li a:hover {
 
 .about-me {
   flex: 4;
+  padding: 30px;
+  justify-content: center;
 }
 
 .work {
@@ -134,6 +141,7 @@ header nav ul li a:hover {
 
 .surf-div p {
   position: absolute;
+  padding: 15px;
   left: 10px;
   bottom: 10px;
   color: black;
@@ -142,6 +150,7 @@ header nav ul li a:hover {
 .surf-report-img {
   height: 300px;
   flex: 3;
+  border: 5px solid var(--primary-color);
 }
 
 .led-div {
@@ -150,14 +159,17 @@ header nav ul li a:hover {
 
 .led-div p {
   position: absolute;
+  padding: 15px;
   left: 10px;
   bottom: 10px;
   color: black;
   background: var(--primary-color);
 }
 .led-img {
-  height: 200px;
+  height: 120px;
+  width: 310px;
   flex: 1;
+  border: 5px solid var(--primary-color);
 }
 
 .calculator-div {
@@ -166,6 +178,7 @@ header nav ul li a:hover {
 
 .calculator-div p {
   position: absolute;
+  padding: 15px;
   left: 10px;
   bottom: 10px;
   color: black;
@@ -173,8 +186,10 @@ header nav ul li a:hover {
 }
 
 .calculator-img {
-  height: 200px;
+  height: 120px;
+  width: 310px;
   flex: 1;
+  border: 5px solid var(--primary-color);
 }
 
 .pastel-puzzles-div {
@@ -183,6 +198,7 @@ header nav ul li a:hover {
 
 .pastel-puzzles-div p {
   position: absolute;
+  padding: 15px;
   left: 10px;
   bottom: 10px;
   color: black;
@@ -190,8 +206,10 @@ header nav ul li a:hover {
 }
 
 .pastel-puzzles-img {
-  height: 200px;
+  height: 120px;
+  width: 310px;
   flex: 1;
+  border: 5px solid var(--primary-color);
 }
 
 .run-buddy-div {
@@ -200,6 +218,7 @@ header nav ul li a:hover {
 
 .run-buddy-div p {
   position: absolute;
+  padding: 15px;
   left: 10px;
   bottom: 10px;
   color: black;
@@ -207,16 +226,25 @@ header nav ul li a:hover {
 }
 
 .run-buddy-img {
-  height: 150px;
-  width: 500px;
+  height: 120px;
+  width: 310px;
   flex: 1;
+  border: 5px solid var(--primary-color);
 }
 
-.contact-me {
+.contact-me ul {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  list-style: none;
+}
+
+.contact-me-links ul li a {
+  font-weight: bolder;
+  font-size: 1.4vw;
+  color: var(--primary-color);
+  border-bottom: 3.5px solid;
 }
 
 /* Contact Me */
