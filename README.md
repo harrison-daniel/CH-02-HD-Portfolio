@@ -2,7 +2,7 @@
 
 ## Purpose
 
-My Professional Portfolio with examples of my work and interests.
+Professional Portfolio with examples of my work developed through the HTML and CSS modules of the bootcamp. Uses pseudo classes, flexbox, and mobile responsiveness.
 
 ## User Story
 
@@ -20,6 +20,8 @@ SO THAT I can review samples of their work and assess whether they're a good can
 <img src=./assets/images/mod-2-portfolio-mockup.png>
 
 ## Website
+
+https://harrison-daniel.github.io/CH-02-HD-Portfolio/
 
 ## Contribution
 
