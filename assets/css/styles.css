@@ -232,6 +232,22 @@ header nav ul li a:hover {
   border: 5px solid var(--primary-color);
 }
 
+.contact-me {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.contact-me a {
+  text-decoration: none;
+  margin: 40px;
+  font-weight: bolder;
+  font-size: 1.4vw;
+  color: var(--primary-color);
+  border-bottom: 3.5px solid;
+}
 .contact-me ul {
   display: flex;
   flex-wrap: wrap;
