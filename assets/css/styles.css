@@ -96,53 +96,94 @@ header nav ul li a:hover {
 .section-title {
   margin: 10px 20px;
   border-right: 3.5px solid;
-  color: var(--secondary-color);
   text-align: right;
+  color: var(--secondary-color);
   font-size: 30px;
   padding: 0px 10px 40px 50px;
 }
 
-.primary-border {
-  border-color: blueviolet;
-}
-
-.secondary-border {
-  border-color: brown;
-}
 /* Section Titles End */
 
 /* About Me */
-.about-me {
-  flex: 1 1 10em;
-}
-
-/* Work  */
-.surf-report {
-  flex: 1 1 10em;
-}
-
-.surf-report img {
-  width: 40%;
-  border-color: var(--primary-color);
-}
-
-/* Contact Me */
-
-/* Utilities */
-.container {
+#about-me,
+#work,
+#contact-me {
   display: flex;
   flex-wrap: wrap;
 }
 
-.containers {
-  width: 100%;
-  margin: 0 auto;
+.about-title,
+.work-title {
+  flex: 1;
+}
+
+.about-me {
+  flex: 4;
+}
+
+.work {
+  flex: 4;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
 }
-/* end Utilities */
+.surf-div {
+  position: relative;
+}
+
+.surf-div p {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  color: black;
+  background-color: var(--primary-color);
+}
+.surf-report-img {
+  height: 300px;
+  flex: 3;
+}
+
+.led-div {
+  position: relative;
+}
+
+.led-div p {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  color: black;
+  background: var(--primary-color);
+}
+.led-wall-img {
+  height: 200px;
+  flex: 1;
+}
+
+.calculator-div {
+  position: relative;
+}
+
+.calculator-div p {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  color: black;
+  background: var(--primary-color);
+}
+
+.calculator-img {
+  height: 200px;
+  flex: 1;
+}
+.contact-me {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Contact Me */
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
