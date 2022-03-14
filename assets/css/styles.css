@@ -124,18 +124,19 @@ header nav ul li a:hover {
   padding: 40px;
 }
 
+/* Work Start */
+
 #work {
   display: flex;
-  justify-content: space-between;
 }
 
 .work {
-  flex: 4;
+  flex: 3;
   padding: 20px;
-  display: flex;
   flex-flow: column;
-  justify-content: space-around;
+  justify-content: center;
 }
+
 .surf-div,
 .led-div,
 .calculator-div,
@@ -211,7 +212,7 @@ header nav ul li a:hover {
 }
 
 .contact-me-links {
-  flex: 2;
+  flex: 2 0 200px;
 }
 
 .contact-me-links a {
@@ -254,5 +255,39 @@ header nav ul li a:hover {
 
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
   @media screen and (max-width: 575px) {
+  }
+  #about-me {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-me {
+    flex: 1;
+    padding: 10px;
+  }
+  #work {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .surf-report-img {
+    width: 375px;
+    height: 275px;
+  }
+  #contact-me {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contact-me-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .section-title {
+    font-size: 22px;
+    padding: 5px;
   }
 }
