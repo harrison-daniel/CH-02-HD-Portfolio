@@ -64,15 +64,6 @@ header nav ul li a:hover {
 
 /* Header and Nav End */
 
-/* Footer Start */
-/*footer {
-  padding: 10px 10px 10px 0px;
-  background-color: rgb(41, 46, 46);
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
 /* Hero Start */
 .hero {
   background-image: url("../images/wood-unsplash.jpg");
@@ -130,9 +121,9 @@ header nav ul li a:hover {
 
 .work {
   flex: 4;
+  padding: 30px;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-flow: column;
   justify-content: space-around;
 }
 .surf-div {
@@ -233,6 +224,7 @@ header nav ul li a:hover {
 }
 
 .contact-me {
+  padding: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -243,20 +235,6 @@ header nav ul li a:hover {
 .contact-me a {
   text-decoration: none;
   margin: 40px;
-  font-weight: bolder;
-  font-size: 1.4vw;
-  color: var(--primary-color);
-  border-bottom: 3.5px solid;
-}
-.contact-me ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
-}
-
-.contact-me-links ul li a {
   font-weight: bolder;
   font-size: 1.4vw;
   color: var(--primary-color);
@@ -286,23 +264,6 @@ header nav ul li a:hover {
 
   header nav ul li a {
     font-size: 20px;
-  }
-
-  .hero-cta,
-  .hero-form {
-    width: 100%;
-  }
-
-  .hero-cta {
-    text-align: center;
-  }
-
-  .section-title {
-    width: 80%;
-  }
-
-  .trainer {
-    flex: 0 70%;
   }
 
   /* MEDIA QUERY FOR TABLETS AND SMALLER */
