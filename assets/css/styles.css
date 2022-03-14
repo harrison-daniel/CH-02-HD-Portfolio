@@ -65,68 +65,82 @@ header nav ul li a:hover {
 /* Header and Nav End */
 
 /* Hero Start */
+
 .hero {
-  background-image: url("../images/wood-unsplash.jpg");
+  width: 100vw;
+  height: 40vh;
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url(../images/wood-unsplash.jpg);
   background-size: cover;
-  display: flex;
-  justify-content: right;
-  flex-wrap: wrap;
   background-attachment: fixed;
-  background-position: 80%;
-  margin: 0px 0px 20px 0px;
-}
-
-.hero-subtitle {
-  padding: 70px 30px 20px 20px;
-  display: flex;
+  justify-content: flex-end;
   align-items: flex-end;
-  flex-wrap: wrap;
+  padding: 40px;
 }
 
-.hero-subtitle h2 {
-  background-color: var(--primary-color);
-  color: black;
-  flex: wrap;
+.hero-headshot-img {
+  width: 300px;
+  height: 400px;
+  margin: 30px;
 }
+
+.hero-content p {
+  font-weight: bold;
+  color: black;
+  background-color: var(--primary-color);
+  font-size: 30px;
+}
+
+/* .hero-background {
+  background-image: url(../images/wood-unsplash.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 60vh;
+  z-index: -1;
+  background-attachment: fixed;
+} */
+
 /* Hero End */
 
 /* Section Titles Start */
 .section-title {
   margin: 10px 20px;
+  padding: 0px 10px 40px 50px;
   border-right: 3.5px solid;
   text-align: right;
   color: var(--secondary-color);
   font-size: 30px;
-  padding: 0px 10px 40px 50px;
 }
 
 /* About Me */
-#about-me,
-#work,
-#contact-me {
+#about-me {
   display: flex;
   flex-wrap: wrap;
 }
 
-.about-title,
-.work-title {
+.about-me {
   flex: 1;
+  padding: 40px;
 }
 
-.about-me {
-  flex: 4;
-  padding: 30px;
-  justify-content: center;
+#work {
+  display: flex;
+  justify-content: space-between;
 }
 
 .work {
   flex: 4;
-  padding: 30px;
+  padding: 20px;
   display: flex;
   flex-flow: column;
   justify-content: space-around;
 }
-.surf-div {
+.surf-div,
+.led-div,
+.calculator-div,
+.pastel-puzzles-div,
+.run-buddy-div {
   position: relative;
 }
 
@@ -144,10 +158,6 @@ header nav ul li a:hover {
   border: 5px solid var(--primary-color);
 }
 
-.led-div {
-  position: relative;
-}
-
 .led-div p {
   position: absolute;
   padding: 15px;
@@ -156,15 +166,14 @@ header nav ul li a:hover {
   color: black;
   background: var(--primary-color);
 }
-.led-img {
+.led-img,
+.calculator-img,
+.pastel-puzzles-img,
+.run-buddy-img {
   height: 120px;
   width: 310px;
   flex: 1;
   border: 5px solid var(--primary-color);
-}
-
-.calculator-div {
-  position: relative;
 }
 
 .calculator-div p {
@@ -176,17 +185,6 @@ header nav ul li a:hover {
   background: var(--primary-color);
 }
 
-.calculator-img {
-  height: 120px;
-  width: 310px;
-  flex: 1;
-  border: 5px solid var(--primary-color);
-}
-
-.pastel-puzzles-div {
-  position: relative;
-}
-
 .pastel-puzzles-div p {
   position: absolute;
   padding: 15px;
@@ -194,17 +192,6 @@ header nav ul li a:hover {
   bottom: 10px;
   color: black;
   background: var(--primary-color);
-}
-
-.pastel-puzzles-img {
-  height: 120px;
-  width: 310px;
-  flex: 1;
-  border: 5px solid var(--primary-color);
-}
-
-.run-buddy-div {
-  position: relative;
 }
 
 .run-buddy-div p {
@@ -216,23 +203,18 @@ header nav ul li a:hover {
   background: var(--primary-color);
 }
 
-.run-buddy-img {
-  height: 120px;
-  width: 310px;
-  flex: 1;
-  border: 5px solid var(--primary-color);
-}
-
-.contact-me {
-  padding: 30px;
+#contact-me {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: baseline;
   align-items: center;
-  list-style: none;
 }
 
-.contact-me a {
+.contact-me-links {
+  flex: 2;
+}
+
+.contact-me-links a {
   text-decoration: none;
   margin: 40px;
   font-weight: bolder;
