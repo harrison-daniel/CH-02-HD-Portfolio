@@ -137,7 +137,7 @@ header nav ul li a:hover {
   justify-content: center;
 }
 
-.surf-div,
+.gitpub-div,
 .led-div,
 .calculator-div,
 .pastel-puzzles-div,
@@ -145,7 +145,7 @@ header nav ul li a:hover {
   position: relative;
 }
 
-.surf-div p {
+.gitpub-div p {
   position: absolute;
   padding: 15px;
   left: 10px;
@@ -153,7 +153,7 @@ header nav ul li a:hover {
   color: black;
   background-color: var(--primary-color);
 }
-.surf-report-img {
+.gitpub-img {
   height: 300px;
   flex: 3;
   border: 5px solid var(--primary-color);
@@ -224,8 +224,88 @@ header nav ul li a:hover {
   border-bottom: 3.5px solid;
 }
 
-/* Contact Me */
+/*NESTED PRACTICE */
+.contact-me-container {
+  display: flex;
+  padding: 1em;
+}
 
+.contact-me-main,
+.contact-me-aside {
+  flex: 1;
+  padding: 1em;
+  margin: 0.6em;
+  background-color: white;
+}
+
+.contact-me-aside {
+  display: flex;
+  flex: 1;
+  flex-flow: row;
+}
+
+.nested {
+  flex: 1;
+  margin: 0.6em;
+  text-decoration: none;
+  border-bottom: var(--primary-color);
+}
+
+/* .contact-me-aside .nested:nth-child(1),
+.contact-me-aside .nested:nth-child(2) {
+  flex: 100%;
+  background-color: crimson; */
+
+/*contact Me Nested Changes End */
+
+/* WORK NESTED PRACTICE */
+
+.work-praction-main {
+  margin: 10px 20px;
+  padding: 0px 10px 40px 50px;
+  border-right: 3.5px solid;
+  text-align: right;
+  color: var(--secondary-color);
+  font-size: 30px;
+}
+
+.work-practice-container {
+  display: flex;
+  padding: 1em;
+}
+
+.work-practice-aside {
+  flex: 1;
+  padding: 1em;
+  margin: 0.6em;
+}
+
+.work-practice-aside {
+  display: flex;
+  flex: 1;
+  flex-flow: column;
+}
+
+.nested {
+  flex: 1;
+  margin: 0.6em;
+}
+
+.work-practice-aside .nested:nth-child(1) {
+  flex: 100%;
+}
+
+.run-buddy-img {
+  height: 120px;
+  width: 310px;
+  flex: 1;
+  border: 5px solid var(--primary-color);
+}
+
+.work-practice-aside p {
+  position: relative;
+  justify-content: flex-start;
+}
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
   header {
@@ -275,7 +355,7 @@ header nav ul li a:hover {
     flex-wrap: wrap;
   }
 
-  .surf-report-img {
+  .gitpub-img {
     width: 375px;
     height: 275px;
   }
