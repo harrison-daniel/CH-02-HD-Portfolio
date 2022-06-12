@@ -137,7 +137,8 @@ header nav ul li a:hover {
   justify-content: center;
 }
 
-.gitpub-div,
+.gitPub-div,
+.careerCommander-div,
 .led-div,
 .calculator-div,
 .pastel-puzzles-div,
@@ -145,7 +146,7 @@ header nav ul li a:hover {
   position: relative;
 }
 
-.gitpub-div p {
+.gitPub-div p {
   position: absolute;
   padding: 15px;
   left: 10px;
@@ -155,8 +156,25 @@ header nav ul li a:hover {
 }
 .gitpub-img {
   height: 300px;
+  width: auto;
   flex: 3;
   border: 5px solid var(--primary-color);
+}
+
+.careerCommander-img {
+  height: 300px;
+  width: auto;
+  flex: 3;
+  border: 5px solid var(--primary-color);
+}
+
+.careerCommander-div p {
+  position: absolute;
+  padding: 15px;
+  left: 10px;
+  bottom: 10px;
+  color: black;
+  background-color: var(--primary-color);
 }
 
 .led-div p {
